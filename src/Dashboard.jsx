@@ -173,10 +173,50 @@ function Segments({ data }) {
 
 const FEED_TAG = { meet: 'Meeting', warm: 'Warm', reply: 'Reply', sent: 'Sent' };
 
-function FeedRow({ a, idx }) {
-  const [ref, inView] = useInView();
+function ThreadModal({ activity, onClose }) {
+  const t = activity.thread;
+  if (!t) return null;
   return (
-    <div ref={ref} className={'feed__row reveal' + (inView ? ' in' : '')} style={{ '--d': `${idx * 40}ms` }}>
+    <div className="modal" onClick={onClose}>
+      <div className="modal__card thread__card" onClick={(e) => e.stopPropagation()} role="dialog" aria-label="Email thread">
+        <button className="modal__close" onClick={onClose} aria-label="Close">×</button>
+        <div className="thread">
+          <div className="thread__head">
+            <div className="thread__eyebrow">EMAIL THREAD · {t.messages.length} {t.messages.length === 1 ? 'message' : 'messages'}</div>
+            <h2 className="thread__subject">{t.subject}</h2>
+            <div className="thread__meta" dangerouslySetInnerHTML={{ __html: activity.body }} />
+          </div>
+          <div className="thread__body">
+            {t.messages.map((m, i) => (
+              <div className={`thread__msg ${m.role === 'out' ? 'out' : 'in'}`} key={i}>
+                <div className="thread__msg-head">
+                  <div className="thread__from">{m.from}</div>
+                  <div className="thread__date">{m.date}</div>
+                </div>
+                <div className="thread__to">to {m.to}</div>
+                <div className="thread__text">{m.body}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FeedRow({ a, idx, onOpen }) {
+  const [ref, inView] = useInView();
+  const clickable = !!a.thread;
+  return (
+    <div
+      ref={ref}
+      className={'feed__row reveal' + (inView ? ' in' : '') + (clickable ? ' clickable' : '')}
+      style={{ '--d': `${idx * 40}ms` }}
+      onClick={clickable ? () => onOpen(a) : undefined}
+      role={clickable ? 'button' : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      onKeyDown={clickable ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(a); } } : undefined}
+    >
       <span className={`feed__dot ${a.tag}`} />
       <div>
         <div className="feed__body" dangerouslySetInnerHTML={{ __html: a.body }} />
@@ -184,6 +224,7 @@ function FeedRow({ a, idx }) {
           <span className={`feed__tag ${a.tag}`}>{FEED_TAG[a.tag] || '—'}</span>
           <span>·</span>
           <span>{a.time}</span>
+          {clickable && <><span>·</span><span className="feed__link">View thread →</span></>}
         </div>
       </div>
     </div>
@@ -191,18 +232,22 @@ function FeedRow({ a, idx }) {
 }
 
 function Feed({ data }) {
+  const [open, setOpen] = useState(null);
   return (
-    <section className="card">
-      <div className="card__head">
-        <h2 className="section__title">Recent activity</h2>
-        <span className="section__meta">7D</span>
-      </div>
-      <div className="card__body">
-        {data.activity.length === 0 ? (
-          <div className="feed__empty">No activity yet — first events will appear once outreach starts.</div>
-        ) : data.activity.map((a, i) => <FeedRow key={i} a={a} idx={i} />)}
-      </div>
-    </section>
+    <>
+      <section className="card">
+        <div className="card__head">
+          <h2 className="section__title">Recent activity</h2>
+          <span className="section__meta">7D</span>
+        </div>
+        <div className="card__body">
+          {data.activity.length === 0 ? (
+            <div className="feed__empty">No activity yet — first events will appear once outreach starts.</div>
+          ) : data.activity.map((a, i) => <FeedRow key={i} a={a} idx={i} onOpen={setOpen} />)}
+        </div>
+      </section>
+      {open && <ThreadModal activity={open} onClose={() => setOpen(null)} />}
+    </>
   );
 }
 
