@@ -83,6 +83,20 @@
       "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation."
     }
   ],
+  "lastWeek": {
+    "weekStart": "May 2",
+    "weekEnd": "May 8",
+    "totals": { "contacted": 248, "replied": 21, "warm": 7, "meetings": 3 },
+    "highlights": [
+      { "tag": "meet", "body": "<b>James Whitcombe</b>, Admissions at <b>Sequoias SF</b> — 30-min call confirmed Mon 10:00 AM." },
+      { "tag": "meet", "body": "<b>Karen Chen</b>, Discharge Planner at <b>UCSF Mission Bay</b> — booked intro for Thu 2:30 PM." },
+      { "tag": "warm", "body": "<b>David Reyes</b>, Elder Law at <b>Reyes &amp; Goldman</b> — \"send me your intake packet, I have two clients this week.\"" },
+      { "tag": "warm", "body": "<b>Dr. Marcus Hall</b>, Geriatrician at <b>One Medical Pacific Heights</b> — wants to add us to his referral list." },
+      { "tag": "warm", "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation." },
+      { "tag": "reply", "body": "<b>Priya Anand</b>, Social Worker at <b>Laguna Honda</b> — asked about overnight rates and minimum hours." }
+    ],
+    "recommendation": "Prioritize the 3 warm leads above this week — same-week follow-up tends to convert ~2× better than waiting."
+  },
   "weekly": [
     { "wk": "W1", "sent": 142, "replied": 9 },
     { "wk": "W2", "sent": 168, "replied": 12 },

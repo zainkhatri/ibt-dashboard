@@ -296,29 +296,85 @@ function Chart({ data }) {
   );
 }
 
-function Friday() {
+const REPORT_TAG_LABEL = { meet: 'Meeting', warm: 'Warm', reply: 'Reply' };
+
+function ReportModal({ data, onClose }) {
+  const lw = data.lastWeek;
+  if (!lw) return null;
+  return (
+    <div className="modal" onClick={onClose}>
+      <div className="modal__card" onClick={(e) => e.stopPropagation()} role="dialog" aria-label="Weekly report">
+        <button className="modal__close" onClick={onClose} aria-label="Close">×</button>
+        <div className="report">
+          <div className="report__eyebrow">{lw.weekStart} – {lw.weekEnd} · WEEKLY REPORT</div>
+          <h2 className="report__title">{data.company}</h2>
+          <div className="report__totals">
+            {[
+              { label: 'Contacted', v: lw.totals.contacted },
+              { label: 'Replied',   v: lw.totals.replied },
+              { label: 'Warm',      v: lw.totals.warm },
+              { label: 'Meetings',  v: lw.totals.meetings },
+            ].map((c) => (
+              <div className="report__cell" key={c.label}>
+                <div className="report__cell-label">{c.label}</div>
+                <div className="report__cell-num">{c.v}</div>
+              </div>
+            ))}
+          </div>
+          <h3 className="report__h">Highlights</h3>
+          <div className="report__rows">
+            {lw.highlights.map((h, i) => (
+              <div className="report__row" key={i}>
+                <span className={`report__chip ${h.tag}`}>{REPORT_TAG_LABEL[h.tag] || '—'}</span>
+                <span className="report__body" dangerouslySetInnerHTML={{ __html: h.body }} />
+              </div>
+            ))}
+          </div>
+          {lw.recommendation && (
+            <p className="report__rec">
+              <b>Recommended next move:</b> {lw.recommendation}
+            </p>
+          )}
+          <div className="report__foot">IBT · Outreach Operations · Operated by Z. Khatri</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Friday({ data }) {
   const [ref, inView] = useInView();
+  const [open, setOpen] = useState(false);
   const now = new Date();
   const day = now.getDay();
   const diff = (5 - day + 7) % 7 || 7;
   const fri = new Date(now); fri.setDate(now.getDate() + diff);
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const hasReport = !!data.lastWeek;
   return (
-    <section ref={ref} className={'friday reveal' + (inView ? ' in' : '')}>
-      <div className="friday__date">
-        <span className="friday__day">Friday</span>
-        <span className="friday__num">{String(fri.getDate()).padStart(2, '0')}</span>
-        <span className="friday__mon">{months[fri.getMonth()]} {fri.getFullYear()}</span>
-      </div>
-      <div>
-        <h3 className="friday__title">Weekly report drops Friday</h3>
-        <p className="friday__sub">A one-page summary at 9:00 AM PT — what shipped, who replied, who looks warm, and the recommended next move.</p>
-      </div>
-      <a className="friday__cta" href="#">
-        Preview last week
-        <span className="arrow" aria-hidden>→</span>
-      </a>
-    </section>
+    <>
+      <section ref={ref} className={'friday reveal' + (inView ? ' in' : '')}>
+        <div className="friday__date">
+          <span className="friday__day">Friday</span>
+          <span className="friday__num">{String(fri.getDate()).padStart(2, '0')}</span>
+          <span className="friday__mon">{months[fri.getMonth()]} {fri.getFullYear()}</span>
+        </div>
+        <div>
+          <h3 className="friday__title">Weekly report drops Friday</h3>
+          <p className="friday__sub">A one-page summary at 9:00 AM PT — what shipped, who replied, who looks warm, and the recommended next move.</p>
+        </div>
+        <button
+          type="button"
+          className="friday__cta"
+          onClick={() => hasReport && setOpen(true)}
+          disabled={!hasReport}
+        >
+          {hasReport ? 'Preview last week' : 'No report yet'}
+          {hasReport && <span className="arrow" aria-hidden>→</span>}
+        </button>
+      </section>
+      {open && <ReportModal data={data} onClose={() => setOpen(false)} />}
+    </>
   );
 }
 
@@ -351,7 +407,7 @@ export default function Dashboard({ user, data, onLogout }) {
         <Feed data={data} />
 
         <Chart data={data} />
-        <Friday />
+        <Friday data={data} />
 
         <footer className="dash__foot">
           <span><b>Updated</b> {formatUpdated(data.updatedAt)} · synced from outreach mailbox</span>
