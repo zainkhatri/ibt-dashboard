@@ -27,28 +27,28 @@
       "tag": "meet",
       "body": "<b>Karen Chen</b>, Discharge Planner at <b>UCSF Mission Bay</b> — booked intro for Thu 2:30 PM.",
       "thread": {
-        "subject": "Discharge support — Family Care SF",
+        "subject": "Backup option for tough discharges",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Karen Chen <kchen@ucsfhealth.org>",
             "role": "out",
             "date": "May 6, 9:14 AM",
-            "body": "Hi Karen,\n\nWhen a patient is medically ready but the home plan is not safe yet, we help. Family Care SF is family-owned, San Francisco-based since 2001, with 24/7 on-call and one-day-or-less turnaround on most new requests. We give a clear yes or no on staffing fast so you can move the case.\n\nOpen to a 10-minute intro call later this week?\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi Karen,\n\nAlex here from Family Care SF — small family-run agency on Ocean Ave, HCO licensed, been at it since 2001. We cover SF, San Mateo, and Marin.\n\nIf you ever have a discharge where the home plan isn't quite there yet, we usually give a yes/no on staffing within a couple hours. Happy to just be a backup name on your list.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "Karen Chen <kchen@ucsfhealth.org>",
             "to": "Alex Girsh <care@familycaresf.com>",
             "role": "in",
             "date": "May 6, 11:42 AM",
-            "body": "Hi Alex — yes, happy to talk. We have weekend discharges that fall through too often. Languages and overnight coverage matter to us. Thursday afternoon work?"
+            "body": "Hi Alex — that'd actually be useful. Weekend discharges fall through on us too often. Languages and overnight coverage matter. Thursday afternoon work for a quick call?"
           },
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Karen Chen <kchen@ucsfhealth.org>",
             "role": "out",
             "date": "May 6, 12:01 PM",
-            "body": "Thursday works. We staff English, Russian, Tagalog, and Spanish, and we cover overnights and weekends. Does 2:30 PM work? I'll call you.\n\nAlex"
+            "body": "Thursday works. We staff English, Russian, Tagalog, and Spanish, and we cover overnights and weekends. 2:30 PM?\n\nAlex"
           },
           {
             "from": "Karen Chen <kchen@ucsfhealth.org>",
@@ -65,14 +65,14 @@
       "tag": "warm",
       "body": "<b>David Reyes</b>, Elder Law at <b>Reyes &amp; Goldman</b> — \"send me your intake packet, I have two clients this week.\"",
       "thread": {
-        "subject": "Reliable, documented care for your clients",
+        "subject": "For your fiduciary clients",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "David Reyes <dreyes@reyesgoldman.com>",
             "role": "out",
             "date": "May 5, 8:48 AM",
-            "body": "Hi David,\n\nFor vulnerable clients who need consistency — caregivers who show up, clean documentation, fast escalation when something changes — we provide reliable, low-drama, non-medical in-home care. Family-owned, SF-based since 2001, HCO licensed.\n\nHappy to send our one-pager if helpful.\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi David,\n\nAlex Girsh — Family Care SF. Small family-run, HCO licensed, SF-based since 2001. We do non-medical in-home care.\n\nFor your fiduciary and conservatorship clients: caregivers who show up, clean shift notes, no drama if something changes. Worth keeping our number around for when something comes up.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "David Reyes <dreyes@reyesgoldman.com>",
@@ -89,14 +89,14 @@
       "tag": "reply",
       "body": "<b>Priya Anand</b>, Social Worker at <b>Laguna Honda</b> — asked about overnight rates and minimum hours.",
       "thread": {
-        "subject": "Continuing care after rehab discharge",
+        "subject": "Hi from Family Care SF",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Priya Anand <panand@lagunahonda.org>",
             "role": "out",
             "date": "May 7, 9:32 AM",
-            "body": "Hi Priya,\n\nWhen a family is leaving rehab and needs to continue the plan safely at home, we step in. Caregivers trained in fall prevention, dementia care, and emergency procedures. Same-day or next-day starts when caregivers are available.\n\nWould a quick intro call be useful?\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi Priya,\n\nAlex from Family Care SF. Family-run, HCO licensed, on Ocean Ave. We do non-medical in-home care — companion, personal care, fall-risk support, overnights.\n\nIf a Laguna Honda discharge ever needs help getting home safely, we usually answer fast and tell you straight up if we can staff it. Just wanted to put us on your radar.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "Priya Anand <panand@lagunahonda.org>",
@@ -113,14 +113,14 @@
       "tag": "warm",
       "body": "<b>Dr. Marcus Hall</b>, Geriatrician at <b>One Medical Pacific Heights</b> — wants to add us to his referral list.",
       "thread": {
-        "subject": "Non-medical in-home support for your patients",
+        "subject": "If you keep a home-care list",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Dr. Marcus Hall <mhall@onemedical.com>",
             "role": "out",
             "date": "May 4, 10:11 AM",
-            "body": "Hi Dr. Hall,\n\nFor patients who need supervision, fall-risk support, medication reminders, or family caregiver relief between your visits, we help. Family Care SF — family-owned SF agency since 2001, HCO licensed, with caregivers trained in fall prevention, dementia care, and emergency procedures.\n\nHappy to drop off our one-pager if you keep a referral list.\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi Dr. Hall,\n\nAlex Girsh — I run Family Care SF, a small family-run home-care agency on Ocean Ave (HCO licensed, since 2001). Non-medical only — companion, personal care, medication reminders, fall-risk support, overnights.\n\nIf you keep a list of agencies you trust for patients who need help at home, I'd be grateful to be on it. We answer fast and we don't say yes if we can't staff.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "Dr. Marcus Hall <mhall@onemedical.com>",
@@ -137,14 +137,14 @@
       "tag": "reply",
       "body": "<b>Linda Okafor</b>, Director at <b>Rhoda Goldman Plaza</b> — \"not a fit right now, check back in Q3.\"",
       "thread": {
-        "subject": "Private-duty support for your residents",
+        "subject": "Hi from Family Care SF",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Linda Okafor <lokafor@rgplaza.org>",
             "role": "out",
             "date": "May 6, 11:03 AM",
-            "body": "Hi Linda,\n\nWhen a resident starts declining and needs more help — falls, missed meals, wandering — we can step in with private-duty support before it becomes a crisis. SF-based, family-owned, with one-day-or-less turnaround on most new requests.\n\nOpen to a quick intro?\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi Linda,\n\nAlex from Family Care SF — small family-run agency on Ocean Ave, HCO licensed. We do non-medical private-duty: companion, personal care, fall-risk support, overnights.\n\nIf one of your residents ever needs more support than IL can provide, happy to be a name on your list.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "Linda Okafor <lokafor@rgplaza.org>",
@@ -161,28 +161,28 @@
       "tag": "meet",
       "body": "<b>James Whitcombe</b>, Admissions at <b>Sequoias SF</b> — 30-min call confirmed Mon 10:00 AM.",
       "thread": {
-        "subject": "Private-duty for transitioning residents",
+        "subject": "Hi from Family Care SF",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "James Whitcombe <jwhitcombe@sequoiasf.org>",
             "role": "out",
             "date": "May 5, 9:00 AM",
-            "body": "Hi James,\n\nWhen a Sequoias resident needs more support than IL can provide, we can step in quickly with private-duty care. Family-owned SF agency since 2001, 24/7 on-call, English/Russian/Tagalog/Spanish caregivers.\n\nOpen to a 15-min intro?\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi James,\n\nAlex Girsh — Family Care SF, small family-run agency on Ocean Ave (HCO licensed, since 2001). Non-medical private-duty: companion, personal care, overnights, fall-risk support.\n\nIf a Sequoias resident ever needs more help than IL covers, happy to be one of the names you keep handy. Languages: English, Russian, Tagalog, Spanish.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "James Whitcombe <jwhitcombe@sequoiasf.org>",
             "to": "Alex Girsh <care@familycaresf.com>",
             "role": "in",
             "date": "May 7, 4:18 PM",
-            "body": "Hi Alex — yes. Mon 10 AM PT works for me. 30 minutes. I'll send a Zoom link."
+            "body": "Hi Alex — yes, worth a quick chat. Mon 10 AM PT works for me. 30 minutes. I'll send a Zoom link."
           },
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "James Whitcombe <jwhitcombe@sequoiasf.org>",
             "role": "out",
             "date": "May 8, 8:45 AM",
-            "body": "Confirmed — Mon May 12, 10:00 AM. Looking forward.\n\nAlex"
+            "body": "Confirmed — Mon May 12, 10:00 AM.\n\nAlex"
           }
         ]
       }
@@ -198,14 +198,14 @@
       "tag": "warm",
       "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation.",
       "thread": {
-        "subject": "Executing your care plans reliably",
+        "subject": "Hi from Family Care SF",
         "messages": [
           {
             "from": "Alex Girsh <care@familycaresf.com>",
             "to": "Rachel Brodsky <rbrodsky@ioaging.org>",
             "role": "out",
             "date": "May 1, 9:22 AM",
-            "body": "Hi Rachel,\n\nWhen your care plan needs reliable execution at home — caregivers who show up, clear updates, fast escalation — we help. Family Care SF is SF-based, family-owned since 2001, HCO licensed.\n\nWould a 15-minute intro be useful?\n\nAlex Girsh\nFamily Care SF\ncare@familycaresf.com\n(415) 225-4948"
+            "body": "Hi Rachel,\n\nAlex from Family Care SF — small family-run agency on Ocean Ave, HCO licensed, since 2001. Non-medical in-home care.\n\nIf you ever have a care plan that needs reliable hands at home and your usual partner is stretched, give us a try. We answer fast and don't say yes if we can't actually staff it.\n\nAlex\n(415) 225-4948"
           },
           {
             "from": "Rachel Brodsky <rbrodsky@ioaging.org>",
