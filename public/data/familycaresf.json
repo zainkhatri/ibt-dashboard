@@ -1,0 +1,28 @@
+{
+  "company": "Family Care SF",
+  "week": 1,
+  "updatedAt": "2026-05-07T22:00:00.000Z",
+  "source": "Pre-launch placeholder. Outreach mailbox not yet provisioned. Will populate automatically once `aggregator/aggregate.mjs --tenant familycaresf` runs against outreach@familycaresf-team.com.",
+  "summary": {
+    "contacted": 0, "contactedDelta": "+0 wk",
+    "replied":   0, "repliedDelta":   "+0 wk",
+    "warm":      0, "warmDelta":      "+0 wk",
+    "meetings":  0, "meetingsDelta":  "+0 wk",
+    "total":     0
+  },
+  "segments": [
+    { "name": "Hospital discharge planners", "note": "UCSF · CPMC · Kaiser SF · St. Mary's · Marin General",       "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "SNF & rehab social workers",  "note": "Discharge social workers · SF + Marin",                     "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "Geriatricians & PCPs",        "note": "Older patient panels · SF · Marin · San Mateo",             "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "Senior living communities",   "note": "Assisted · independent · adult day programs",               "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "Elder law attorneys",         "note": "Trust & estate · geriatric care managers",                  "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "Hospice agencies",            "note": "Continuity-of-care partners",                               "sent": 0, "replied": 0, "warm": 0 },
+    { "name": "Financial advisors",          "note": "Senior client books · estate practices",                    "sent": 0, "replied": 0, "warm": 0 }
+  ],
+  "activity": [
+    { "time": "Today", "tag": "sent", "body": "<b>Family Care SF</b> account provisioned. Outreach domain (familycaresf-team.com) and sender infrastructure being configured — first sends go live within the week." }
+  ],
+  "weekly": [
+    { "wk": "W1", "sent": 0, "replied": 0 }
+  ]
+}
