@@ -1,10 +1,10 @@
 {
   "company": "Family Care SF",
   "week": 9,
-  "updatedAt": "2026-05-09T08:31:15.889Z",
+  "updatedAt": "2026-05-09T08:41:38.626Z",
   "source": "Postgres · 60-day window",
   "summary": {
-    "contacted": 2,
+    "contacted": 0,
     "contactedDelta": "+0 wk",
     "replied": 0,
     "repliedDelta": "+0 wk",
@@ -12,20 +12,13 @@
     "warmDelta": "+0 wk",
     "meetings": 0,
     "meetingsDelta": "+0 wk",
-    "total": 2
+    "total": 0
   },
   "segments": [
     {
       "name": "Elder law attorneys",
       "note": "",
-      "sent": 1,
-      "replied": 0,
-      "warm": 0
-    },
-    {
-      "name": "Hospice agencies",
-      "note": "",
-      "sent": 1,
+      "sent": 0,
       "replied": 0,
       "warm": 0
     },
@@ -52,6 +45,13 @@
     },
     {
       "name": "Senior living communities",
+      "note": "",
+      "sent": 0,
+      "replied": 0,
+      "warm": 0
+    },
+    {
+      "name": "Hospice agencies",
       "note": "",
       "sent": 0,
       "replied": 0,
