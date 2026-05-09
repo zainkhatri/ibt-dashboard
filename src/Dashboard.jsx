@@ -1,4 +1,8 @@
+import { useState } from 'react';
 import { useInView, useCountUp } from './hooks.js';
+
+const WINDOW_LABELS = { day: 'Day', week: 'Week', month: 'Month', year: 'Year', all: 'All time' };
+const WINDOW_KEYS   = ['day', 'week', 'month', 'year', 'all'];
 
 function initials(name = '') {
   return name.split(/\s+/).filter(Boolean).slice(0, 2).map((s) => s[0].toUpperCase()).join('');
@@ -63,8 +67,46 @@ function Hero({ data, user }) {
   );
 }
 
-function Stats({ data }) {
-  const s = data.summary;
+function WindowToggle({ value, onChange }) {
+  return (
+    <div className="window-toggle" role="tablist" aria-label="Time window">
+      {WINDOW_KEYS.map((k) => (
+        <button
+          key={k}
+          role="tab"
+          aria-selected={value === k}
+          className={'window-toggle__btn' + (value === k ? ' is-active' : '')}
+          onClick={() => onChange(k)}
+        >
+          {WINDOW_LABELS[k]}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function statsForWindow(data, win) {
+  if (win === 'all' || !data.windows) {
+    const s = data.summary;
+    return {
+      contacted: s.contacted, replied: s.replied,
+      warm: s.warm, meetings: s.meetings,
+      contactedDelta: s.contactedDelta, repliedDelta: s.repliedDelta,
+      warmDelta: s.warmDelta, meetingsDelta: s.meetingsDelta,
+    };
+  }
+  const w = data.windows[win] || { contacted: 0, replied: 0, warm: 0, meetings: 0 };
+  const tag = WINDOW_LABELS[win].toLowerCase();
+  return {
+    contacted: w.contacted, replied: w.replied,
+    warm: w.warm, meetings: w.meetings,
+    contactedDelta: `last ${tag}`, repliedDelta: `last ${tag}`,
+    warmDelta: `last ${tag}`, meetingsDelta: `last ${tag}`,
+  };
+}
+
+function Stats({ data, win }) {
+  const s = statsForWindow(data, win);
   const max = Math.max(s.contacted, s.replied * 8, 100);
   return (
     <section className="stats">
@@ -281,6 +323,7 @@ function Friday() {
 }
 
 export default function Dashboard({ user, data, onLogout }) {
+  const [win, setWin] = useState('week');
   return (
     <div className="dash fade-in">
       <header className="dash__top">
@@ -302,12 +345,10 @@ export default function Dashboard({ user, data, onLogout }) {
 
       <main className="dash__main">
         <Hero data={data} user={user} />
-        <Stats data={data} />
+        <WindowToggle value={win} onChange={setWin} />
+        <Stats data={data} win={win} />
 
-        <div className="cols">
-          <Segments data={data} />
-          <Feed data={data} />
-        </div>
+        <Feed data={data} />
 
         <Chart data={data} />
         <Friday />

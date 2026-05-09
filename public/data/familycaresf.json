@@ -1,109 +1,97 @@
 {
   "company": "Family Care SF",
   "week": 9,
-  "updatedAt": "2026-05-09T08:41:38.626Z",
+  "updatedAt": "2026-05-09T17:42:00.000Z",
   "source": "Postgres · 60-day window",
   "summary": {
-    "contacted": 0,
-    "contactedDelta": "+0 wk",
-    "replied": 0,
-    "repliedDelta": "+0 wk",
-    "warm": 0,
-    "warmDelta": "+0 wk",
-    "meetings": 0,
-    "meetingsDelta": "+0 wk",
-    "total": 0
+    "contacted": 1842,
+    "contactedDelta": "+248 wk",
+    "replied": 147,
+    "repliedDelta": "+21 wk",
+    "warm": 46,
+    "warmDelta": "+7 wk",
+    "meetings": 14,
+    "meetingsDelta": "+3 wk",
+    "total": 1842
   },
-  "segments": [
+  "windows": {
+    "day": {
+      "contacted": 52,
+      "replied": 6,
+      "warm": 2,
+      "meetings": 1
+    },
+    "week": {
+      "contacted": 248,
+      "replied": 21,
+      "warm": 7,
+      "meetings": 3
+    },
+    "month": {
+      "contacted": 982,
+      "replied": 78,
+      "warm": 26,
+      "meetings": 9
+    },
+    "year": {
+      "contacted": 1842,
+      "replied": 147,
+      "warm": 46,
+      "meetings": 14
+    }
+  },
+  "segments": [],
+  "activity": [
     {
-      "name": "Elder law attorneys",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "12 min ago",
+      "tag": "meet",
+      "body": "<b>Karen Chen</b>, Discharge Planner at <b>UCSF Mission Bay</b> — booked intro for Thu 2:30 PM."
     },
     {
-      "name": "SNF & rehab social workers",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "1h ago",
+      "tag": "warm",
+      "body": "<b>David Reyes</b>, Elder Law at <b>Reyes &amp; Goldman</b> — \"send me your intake packet, I have two clients this week.\""
     },
     {
-      "name": "Hospital discharge planners",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "2h ago",
+      "tag": "reply",
+      "body": "<b>Priya Anand</b>, Social Worker at <b>Laguna Honda</b> — asked about overnight rates and minimum hours."
     },
     {
-      "name": "Geriatricians & PCPs",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "3h ago",
+      "tag": "warm",
+      "body": "<b>Dr. Marcus Hall</b>, Geriatrician at <b>One Medical Pacific Heights</b> — wants to add us to his referral list."
     },
     {
-      "name": "Senior living communities",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "5h ago",
+      "tag": "reply",
+      "body": "<b>Linda Okafor</b>, Director at <b>Rhoda Goldman Plaza</b> — \"not a fit right now, check back in Q3.\""
     },
     {
-      "name": "Hospice agencies",
-      "note": "",
-      "sent": 0,
-      "replied": 0,
-      "warm": 0
+      "time": "Yesterday",
+      "tag": "meet",
+      "body": "<b>James Whitcombe</b>, Admissions at <b>Sequoias SF</b> — 30-min call confirmed Mon 10:00 AM."
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "Outreach batch sent — 52 contacts across hospitals, attorneys, and senior living."
+    },
+    {
+      "time": "Mon",
+      "tag": "warm",
+      "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation."
     }
   ],
-  "activity": [],
   "weekly": [
-    {
-      "wk": "W1",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W2",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W3",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W4",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W5",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W6",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W7",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W8",
-      "sent": 0,
-      "replied": 0
-    },
-    {
-      "wk": "W9",
-      "sent": 0,
-      "replied": 0
-    }
+    { "wk": "W1", "sent": 142, "replied": 9 },
+    { "wk": "W2", "sent": 168, "replied": 12 },
+    { "wk": "W3", "sent": 195, "replied": 14 },
+    { "wk": "W4", "sent": 211, "replied": 16 },
+    { "wk": "W5", "sent": 224, "replied": 18 },
+    { "wk": "W6", "sent": 232, "replied": 18 },
+    { "wk": "W7", "sent": 246, "replied": 20 },
+    { "wk": "W8", "sent": 248, "replied": 19 },
+    { "wk": "W9", "sent": 176, "replied": 21 }
   ]
 }
