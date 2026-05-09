@@ -51,14 +51,12 @@ function Hero({ data, user }) {
           <p className="hero__sub fade-up" style={{ '--d': '120ms' }}>
             {empty
               ? 'Outreach mailbox is being provisioned. First sends go live within the week.'
-              : `${data.summary.replied} replies · ${data.summary.warm} warm · ${data.summary.meetings} meetings booked, ${data.week}-week period.`}
+              : `${data.summary.replied} replies · ${data.summary.warm} warm · ${data.summary.meetings} meetings booked.`}
           </p>
         </div>
         <div className="status fade-up" style={{ '--d': '180ms' }}>
           <span className={'status__dot' + (empty ? ' warming' : '')} />
           <span>{empty ? 'Setting up' : 'Live'}</span>
-          <span style={{ color: 'var(--ink-4)' }}>·</span>
-          <span style={{ color: 'var(--ink-3)' }}>Week {data.week}</span>
         </div>
       </div>
     </section>
