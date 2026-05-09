@@ -6,24 +6,24 @@ import {
   createAccount, login, fetchTenantSnapshot
 } from './accounts.js';
 
-function bootstrapFAi() {
-  // First-run convenience: ensure the FAi account exists and sign in.
-  // Real data will be loaded from /data/furtherai.json by the effect below.
-  let res = login({ email: 'zain@furtherai.com', password: 'fai-demo' });
-  if (res.error) {
-    res = createAccount({
-      email: 'zain@furtherai.com',
-      password: 'fai-demo',
-      name: 'Zain Khatri',
-      company: 'FurtherAI'
-    });
-  }
+// Demo bootstrap. URL param ?as=zain switches to FurtherAI; default = Alex/FCSF.
+const DEMO_ACCOUNTS = {
+  alex: { email: 'alex@familycaresf.com', password: 'fcsf-demo', name: 'Alex Girsh',  company: 'Family Care SF' },
+  zain: { email: 'zain@furtherai.com',    password: 'fai-demo',  name: 'Zain Khatri', company: 'FurtherAI'      },
+};
+
+function bootstrapDemo() {
+  const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const which = params?.get('as') === 'zain' ? 'zain' : 'alex';
+  const acct = DEMO_ACCOUNTS[which];
+  let res = login({ email: acct.email, password: acct.password });
+  if (res.error) res = createAccount(acct);
   if (res.user) { setSession(res.user); return res.user; }
   return null;
 }
 
 export default function App() {
-  const [user, setUser] = useState(() => getSession() || bootstrapFAi());
+  const [user, setUser] = useState(() => getSession() || bootstrapDemo());
   const [data, setDataState] = useState(null);
 
   useEffect(() => {
