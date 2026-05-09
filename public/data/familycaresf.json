@@ -15,9 +15,9 @@
     "total": 200
   },
   "windows": {
-    "day":   { "contacted": 14,  "replied": 1,  "warm": 0, "meetings": 0 },
-    "week":  { "contacted": 92,  "replied": 7,  "warm": 4, "meetings": 2 },
-    "month": { "contacted": 200, "replied": 12, "warm": 4, "meetings": 2 },
+    "day":   { "contacted": 0,   "replied": 5,  "warm": 2, "meetings": 1 },
+    "week":  { "contacted": 80,  "replied": 7,  "warm": 4, "meetings": 2 },
+    "month": { "contacted": 113, "replied": 9,  "warm": 4, "meetings": 2 },
     "year":  { "contacted": 200, "replied": 12, "warm": 4, "meetings": 2 }
   },
   "segments": [],
