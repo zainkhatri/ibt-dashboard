@@ -8,7 +8,7 @@ import {
 
 // Demo bootstrap. URL param ?as=zain switches to FurtherAI; default = Alex/FCSF.
 const DEMO_ACCOUNTS = {
-  alex: { email: 'alex@familycaresf.com', password: 'fcsf-demo', name: 'Alex Girsh',  company: 'Family Care SF' },
+  alex: { email: 'alex@familycaresf.com', password: 'goldengate', name: 'Alex Girsh',  company: 'Family Care SF' },
   zain: { email: 'zain@furtherai.com',    password: 'fai-demo',  name: 'Zain Khatri', company: 'FurtherAI'      },
 };
 
