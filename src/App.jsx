@@ -3,7 +3,7 @@ import Auth from './Auth.jsx';
 import Dashboard from './Dashboard.jsx';
 import {
   getSession, setSession, getData, seedDataFor, setData,
-  createAccount, login, fetchTenantSnapshot
+  createAccount, login, fetchTenantSnapshot, ensureDemoAccount,
 } from './accounts.js';
 
 // Demo bootstrap. URL param ?as=zain switches to FurtherAI; default = Alex/FCSF.
@@ -13,11 +13,13 @@ const DEMO_ACCOUNTS = {
 };
 
 function bootstrapDemo() {
+  // Reseat both demo accounts every boot — keeps passwords in sync with source
+  // even if a browser already created them with an older default.
+  for (const acct of Object.values(DEMO_ACCOUNTS)) ensureDemoAccount(acct);
   const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
   const which = params?.get('as') === 'zain' ? 'zain' : 'alex';
   const acct = DEMO_ACCOUNTS[which];
-  let res = login({ email: acct.email, password: acct.password });
-  if (res.error) res = createAccount(acct);
+  const res = login({ email: acct.email, password: acct.password });
   if (res.user) { setSession(res.user); return res.user; }
   return null;
 }

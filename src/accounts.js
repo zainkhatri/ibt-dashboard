@@ -23,6 +23,38 @@ export function listAccounts() {
   return Object.values(load()).map(({ password, ...rest }) => rest);
 }
 
+// Reseat a demo account to its canonical password every boot. Without this,
+// changes to the demo password in source don't propagate to browsers that
+// already created the account with the old hash.
+export function ensureDemoAccount({ email, password, name, company }) {
+  const e = (email || '').trim().toLowerCase();
+  if (!e || !password) return null;
+  const map = load();
+  const existing = map[e];
+  if (existing) {
+    if (existing.password !== hash(password)) {
+      existing.password = hash(password);
+      map[e] = existing;
+      save(map);
+    }
+    return stripPw(existing);
+  }
+  const id = `acct_${Date.now().toString(36)}`;
+  const acct = {
+    id, email: e,
+    name: (name || e.split('@')[0]).trim(),
+    company: (company || '').trim(),
+    password: hash(password),
+    createdAt: new Date().toISOString(),
+  };
+  map[e] = acct;
+  save(map);
+  if (!localStorage.getItem(DATA_KEY(id))) {
+    localStorage.setItem(DATA_KEY(id), JSON.stringify(seedDataFor(acct.company)));
+  }
+  return stripPw(acct);
+}
+
 export function createAccount({ email, password, name, company }) {
   const e = email.trim().toLowerCase();
   if (!e || !password) return { error: 'Email and password are required.' };
