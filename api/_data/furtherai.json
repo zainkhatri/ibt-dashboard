@@ -1,13 +1,13 @@
 {
   "company": "FurtherAI",
   "week": 9,
-  "updatedAt": "2026-05-10T06:38:24.268Z",
+  "updatedAt": "2026-05-10T09:00:36.560Z",
   "source": "Postgres · 60-day window",
   "summary": {
     "contacted": 1006,
     "contactedDelta": "+369 wk",
     "replied": 96,
-    "repliedDelta": "+20 wk",
+    "repliedDelta": "+4 wk",
     "warm": 20,
     "warmDelta": "+0 wk",
     "meetings": 20,
@@ -17,25 +17,25 @@
   "windows": {
     "day": {
       "contacted": 0,
-      "replied": 16,
+      "replied": 0,
       "warm": 0,
       "meetings": 0
     },
     "week": {
       "contacted": 369,
-      "replied": 20,
+      "replied": 4,
       "warm": 0,
       "meetings": 0
     },
     "month": {
       "contacted": 463,
-      "replied": 23,
+      "replied": 7,
       "warm": 1,
       "meetings": 1
     },
     "year": {
       "contacted": 3244,
-      "replied": 101,
+      "replied": 85,
       "warm": 1,
       "meetings": 1
     }
@@ -51,44 +51,44 @@
   ],
   "activity": [
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>dolson@k2ins.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · USI Insurance Services · <i>Insurance Innovators Nashville + USI</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>dominic.catapano@hadroninsurance.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · CNA Insurance · <i>AI Agents Built Around Your Workflows</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>jason.kunert@amwins.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Professional Lines Submissions And AI</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>k.watt@arvorinsurance.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Arthur J. Gallagher · <i>Insurance Innovators Nashville + Gallagher</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>ken.jordan@alliant.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Westfield Specialty Insurance · <i>Shared & Layered Intake Complexity</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>kgieger@travelers.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Submission Intake At Amwins Scale</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>laura.coppola@falconriskservices.com</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Baton Rouge Operations And AI</i>"
     },
     {
-      "time": "just now",
-      "tag": "reply",
-      "body": "<b>Declined</b> by <b>lena.munad@sjsu.edu</b>"
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Amwins</i>"
     }
   ],
   "weekly": [
