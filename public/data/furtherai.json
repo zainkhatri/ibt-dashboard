@@ -1,18 +1,18 @@
 {
   "company": "FurtherAI",
   "week": 9,
-  "updatedAt": "2026-05-10T09:11:56.103Z",
+  "updatedAt": "2026-05-10T06:31:05.252Z",
   "source": "Postgres · 60-day window",
   "summary": {
-    "contacted": 1006,
+    "contacted": 1562,
     "contactedDelta": "+369 wk",
-    "replied": 96,
-    "repliedDelta": "+4 wk",
-    "warm": 20,
+    "replied": 0,
+    "repliedDelta": "+0 wk",
+    "warm": 0,
     "warmDelta": "+0 wk",
-    "meetings": 20,
+    "meetings": 0,
     "meetingsDelta": "+0 wk",
-    "total": 1006
+    "total": 1562
   },
   "windows": {
     "day": {
@@ -23,49 +23,37 @@
     },
     "week": {
       "contacted": 369,
-      "replied": 4,
+      "replied": 0,
       "warm": 0,
       "meetings": 0
     },
     "month": {
       "contacted": 463,
-      "replied": 7,
-      "warm": 1,
-      "meetings": 1
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
     },
     "year": {
       "contacted": 3244,
-      "replied": 85,
-      "warm": 1,
-      "meetings": 1
-    }
-  },
-  "hubspot": {
-    "in_pipeline": {
-      "customer": 5,
-      "opportunity": 72,
-      "active_deal": 22
-    },
-    "hubspot_blocklist_size": {
-      "customer": 164,
-      "opportunity": 654,
-      "active_deal": 458
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
     }
   },
   "segments": [
     {
       "name": "Other",
       "note": "",
-      "sent": 1006,
-      "replied": 96,
-      "warm": 20
+      "sent": 1562,
+      "replied": 0,
+      "warm": 0
     }
   ],
   "activity": [
     {
       "time": "Yesterday",
       "tag": "sent",
-      "body": "<b>1 send</b> · USI Insurance Services · <i>Insurance Innovators Nashville + USI</i> <span class=\"hs-badge opportunity\">HubSpot · opportunity</span>"
+      "body": "<b>1 send</b> · USI Insurance Services · <i>Insurance Innovators Nashville + USI</i>"
     },
     {
       "time": "Yesterday",
@@ -80,7 +68,7 @@
     {
       "time": "Yesterday",
       "tag": "sent",
-      "body": "<b>1 send</b> · Arthur J. Gallagher · <i>Insurance Innovators Nashville + Gallagher</i> <span class=\"hs-badge opportunity\">HubSpot · opportunity</span>"
+      "body": "<b>1 send</b> · Arthur J. Gallagher · <i>Insurance Innovators Nashville + Gallagher</i>"
     },
     {
       "time": "Yesterday",

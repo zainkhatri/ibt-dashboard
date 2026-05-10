@@ -948,6 +948,52 @@ a      { color: inherit; text-decoration: none; }
   white-space: pre-wrap;
 }
 
+/* HubSpot badge in feed body */
+.hs-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 99px;
+  margin-left: 6px;
+  vertical-align: 1px;
+  border: 1px solid var(--line-2);
+  color: var(--ink-3);
+  background: var(--bg);
+}
+.hs-badge.customer    { color: var(--green);  border-color: var(--green);   background: var(--green-bg); }
+.hs-badge.opportunity { color: var(--amber);  border-color: var(--amber);   background: var(--amber-bg); }
+.hs-badge.active-deal { color: var(--ink);    border-color: var(--ink);     background: var(--bg-2); }
+
+/* HubSpot section */
+.hubspot-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  margin-bottom: 24px;
+  align-items: center;
+}
+.hubspot-card__head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.hubspot-card__title { font-size: 14px; font-weight: 600; }
+.hubspot-card__meta  { font-family: var(--mono); font-size: 11px; color: var(--ink-4); letter-spacing: 0.04em; }
+.hubspot-card__grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 18px;
+}
+.hubspot-card__cell { font-family: var(--mono); font-size: 12px; }
+.hubspot-card__cell b { color: var(--ink); font-weight: 600; font-size: 14px; }
+.hubspot-card__cell .leak { color: var(--red); }
+@media (max-width: 720px) { .hubspot-card { grid-template-columns: 1fr; } .hubspot-card__grid { grid-template-columns: repeat(3, 1fr); } }
+
 /* Footer */
 .dash__foot {
   margin-top: 32px;

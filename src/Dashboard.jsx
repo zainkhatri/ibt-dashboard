@@ -105,6 +105,36 @@ function statsForWindow(data, win) {
   };
 }
 
+function HubspotCard({ data }) {
+  const hs = data.hubspot;
+  if (!hs || !hs.in_pipeline) return null;
+  const ip = hs.in_pipeline;
+  const total = hs.hubspot_blocklist_size || { customer: 0, opportunity: 0, active_deal: 0 };
+  const blockedTotal = (total.customer || 0) + (total.opportunity || 0) + (total.active_deal || 0);
+  return (
+    <section className="hubspot-card">
+      <div>
+        <div className="hubspot-card__head">
+          <div className="hubspot-card__title">HubSpot CRM</div>
+          <div className="hubspot-card__meta">{blockedTotal.toLocaleString()} BLOCKED &middot; REFRESHED NIGHTLY</div>
+        </div>
+        <div style={{ marginTop: 6, fontSize: 12.5, color: 'var(--ink-3)', lineHeight: 1.5 }}>
+          Outreach is suppressed against existing CRM relationships. Numbers on the right are how many
+          contacts in your current pipeline overlap with the HubSpot blocklist &mdash;
+          {ip.customer > 0
+            ? <span className="leak"> {ip.customer} customer{ip.customer === 1 ? '' : 's'} got mailed (suppression leak)</span>
+            : ' no customer leaks'}.
+        </div>
+      </div>
+      <div className="hubspot-card__grid">
+        <div className="hubspot-card__cell"><div>customers</div><b className={ip.customer > 0 ? 'leak' : ''}>{ip.customer}</b></div>
+        <div className="hubspot-card__cell"><div>opportunities</div><b>{ip.opportunity}</b></div>
+        <div className="hubspot-card__cell"><div>active deals</div><b>{ip.active_deal}</b></div>
+      </div>
+    </section>
+  );
+}
+
 function Stats({ data, win }) {
   const s = statsForWindow(data, win);
   const max = Math.max(s.contacted, s.replied * 8, 100);
@@ -448,6 +478,7 @@ export default function Dashboard({ user, data, onLogout }) {
         <Hero data={data} user={user} />
         <WindowToggle value={win} onChange={setWin} />
         <Stats data={data} win={win} />
+        <HubspotCard data={data} />
 
         <Feed data={data} />
 
