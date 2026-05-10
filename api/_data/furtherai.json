@@ -1,112 +1,94 @@
 {
   "company": "FurtherAI",
   "week": 9,
-  "updatedAt": "2026-05-08T07:55:33.846Z",
+  "updatedAt": "2026-05-10T06:32:09.250Z",
   "source": "Postgres · 60-day window",
   "summary": {
-    "contacted": 10,
-    "contactedDelta": "+1 wk",
-    "replied": 6,
-    "repliedDelta": "+6 wk",
-    "warm": 4,
-    "warmDelta": "+4 wk",
-    "meetings": 2,
-    "meetingsDelta": "+2 wk",
-    "total": 10
+    "contacted": 1562,
+    "contactedDelta": "+369 wk",
+    "replied": 0,
+    "repliedDelta": "+0 wk",
+    "warm": 0,
+    "warmDelta": "+0 wk",
+    "meetings": 0,
+    "meetingsDelta": "+0 wk",
+    "total": 1562
+  },
+  "windows": {
+    "day": {
+      "contacted": 0,
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
+    },
+    "week": {
+      "contacted": 369,
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
+    },
+    "month": {
+      "contacted": 463,
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
+    },
+    "year": {
+      "contacted": 3244,
+      "replied": 0,
+      "warm": 0,
+      "meetings": 0
+    }
   },
   "segments": [
     {
-      "name": "Hospital discharge planners",
+      "name": "Other",
       "note": "",
-      "sent": 2,
-      "replied": 1,
-      "warm": 1
-    },
-    {
-      "name": "Carriers",
-      "note": "",
-      "sent": 2,
-      "replied": 1,
-      "warm": 1
-    },
-    {
-      "name": "Insurtech & cyber",
-      "note": "",
-      "sent": 1,
+      "sent": 1562,
       "replied": 0,
       "warm": 0
-    },
-    {
-      "name": "MGAs & program markets",
-      "note": "",
-      "sent": 1,
-      "replied": 1,
-      "warm": 1
-    },
-    {
-      "name": "Reinsurance & venture",
-      "note": "",
-      "sent": 1,
-      "replied": 1,
-      "warm": 0
-    },
-    {
-      "name": "Retail brokers",
-      "note": "",
-      "sent": 1,
-      "replied": 0,
-      "warm": 0
-    },
-    {
-      "name": "Wholesale brokers",
-      "note": "",
-      "sent": 1,
-      "replied": 0,
-      "warm": 0
-    },
-    {
-      "name": "E&S specialty",
-      "note": "",
-      "sent": 1,
-      "replied": 1,
-      "warm": 1
     }
   ],
   "activity": [
     {
-      "time": "2h ago",
-      "tag": "reply",
-      "body": "<b>Reply</b> from <b>Bay Wealth Management</b> — forwarded to BD."
-    },
-    {
-      "time": "4h ago",
-      "tag": "reply",
-      "body": "<b>Decline</b> from <b>Marin Geriatrics</b> — not interested, requested removal."
-    },
-    {
-      "time": "6h ago",
-      "tag": "meet",
-      "body": "<b>Meeting booked.</b> Ocean View Trust Law — via Calendly."
-    },
-    {
-      "time": "8h ago",
-      "tag": "warm",
-      "body": "<b>Warm reply</b> from <b>Pacific Park Senior Living</b> · \"what services do you offer?\""
-    },
-    {
-      "time": "10h ago",
-      "tag": "warm",
-      "body": "<b>Warm reply</b> from <b>Dr. R. Chen</b> (UCSF Geriatrics) — wants to hear more."
-    },
-    {
-      "time": "12h ago",
-      "tag": "meet",
-      "body": "<b>Meeting locked.</b> Tara Lin · Marin General — Wed 5/13 at 10:00am CT."
-    },
-    {
-      "time": "20h ago",
+      "time": "Yesterday",
       "tag": "sent",
-      "body": "<b>10 sends</b> · test seed batch · multi-segment"
+      "body": "<b>1 send</b> · USI Insurance Services · <i>Insurance Innovators Nashville + USI</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · CNA Insurance · <i>AI Agents Built Around Your Workflows</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Professional Lines Submissions And AI</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Arthur J. Gallagher · <i>Insurance Innovators Nashville + Gallagher</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Westfield Specialty Insurance · <i>Shared & Layered Intake Complexity</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Submission Intake At Amwins Scale</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Baton Rouge Operations And AI</i>"
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "<b>1 send</b> · Amwins · <i>Amwins</i>"
     }
   ],
   "weekly": [
@@ -132,28 +114,28 @@
     },
     {
       "wk": "W5",
-      "sent": 0,
+      "sent": 919,
       "replied": 0
     },
     {
       "wk": "W6",
-      "sent": 0,
+      "sent": 1039,
       "replied": 0
     },
     {
       "wk": "W7",
-      "sent": 0,
+      "sent": 628,
       "replied": 0
     },
     {
       "wk": "W8",
-      "sent": 0,
+      "sent": 289,
       "replied": 0
     },
     {
       "wk": "W9",
-      "sent": 10,
-      "replied": 6
+      "sent": 369,
+      "replied": 0
     }
   ]
 }

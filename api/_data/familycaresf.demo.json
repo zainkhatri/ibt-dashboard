@@ -1,0 +1,246 @@
+{
+  "company": "Family Care SF",
+  "week": 9,
+  "updatedAt": "2026-05-09T17:42:00.000Z",
+  "source": "Postgres · 60-day window",
+  "summary": {
+    "contacted": 200,
+    "contactedDelta": "+92 wk",
+    "replied": 12,
+    "repliedDelta": "+7 wk",
+    "warm": 4,
+    "warmDelta": "+2 wk",
+    "meetings": 2,
+    "meetingsDelta": "+1 wk",
+    "total": 200
+  },
+  "windows": {
+    "day":   { "contacted": 0,   "replied": 5,  "warm": 2, "meetings": 1 },
+    "week":  { "contacted": 80,  "replied": 7,  "warm": 4, "meetings": 2 },
+    "month": { "contacted": 113, "replied": 9,  "warm": 4, "meetings": 2 },
+    "year":  { "contacted": 200, "replied": 12, "warm": 4, "meetings": 2 }
+  },
+  "segments": [],
+  "activity": [
+    {
+      "time": "12 min ago",
+      "tag": "meet",
+      "body": "<b>Karen Chen</b>, Discharge Planner at <b>UCSF Mission Bay</b> — booked intro for Thu 2:30 PM.",
+      "thread": {
+        "subject": "Home-care backup for SF discharges",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Karen Chen <kchen@ucsfhealth.org>",
+            "role": "out",
+            "date": "May 6, 9:14 AM",
+            "body": "Hi Karen,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency in SF since 2001. We send caregivers into patients' homes after discharge: personal care, companion, fall-risk help, overnights. Caregivers fluent in English, Russian, Tagalog, and Spanish.\n\nWhat I'd want a UCSF discharge planner to know about us: when a patient's medically ready to go home but the home plan isn't quite safe yet, the agencies that earn their spot are the ones that pick up the phone, give you a clear yes or no on staffing within a couple hours, and can start same-day when it's a fit. That's what we work to do every time.\n\nHappy to send a one-pager, or take 10 minutes by phone if it's easier to vet us before a real case comes up.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "Karen Chen <kchen@ucsfhealth.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 6, 11:42 AM",
+            "body": "Hi Alex — that'd actually be useful. Weekend discharges fall through on us too often. Languages and overnight coverage matter. Thursday afternoon work for a quick call?"
+          },
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Karen Chen <kchen@ucsfhealth.org>",
+            "role": "out",
+            "date": "May 6, 12:01 PM",
+            "body": "Thursday's good. We've got caregivers in English, Russian, Tagalog, and Spanish — overnights and weekends are kind of our thing. 2:30 work for you?\n\nAlex"
+          },
+          {
+            "from": "Karen Chen <kchen@ucsfhealth.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 9, 9:47 AM",
+            "body": "Confirmed — Thu May 14, 2:30 PM. Calendar invite sent."
+          }
+        ]
+      }
+    },
+    {
+      "time": "1h ago",
+      "tag": "warm",
+      "body": "<b>David Reyes</b>, Elder Law at <b>Reyes &amp; Goldman</b> — \"send me your intake packet, I have two clients this week.\"",
+      "thread": {
+        "subject": "Home care for conservatorship clients",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "David Reyes <dreyes@reyesgoldman.com>",
+            "role": "out",
+            "date": "May 5, 8:48 AM",
+            "body": "Hi David,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency here in SF since 2001. Private-duty in-home care: personal care, companion, overnights, fall-risk support.\n\nFor your conservatorship and trust clients, what tends to matter most isn't the care plan itself — it's that the caregiver shows up consistently, leaves clean shift notes, and someone calls you before something becomes a problem. We've spent 24 years figuring out how to do that without drama.\n\nHappy to send our one-pager so you have something to look at before a client situation comes up.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "David Reyes <dreyes@reyesgoldman.com>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 9, 4:12 PM",
+            "body": "Send me your intake packet — I have two clients this week. One in Pacific Heights, one in Forest Hill. Both private pay, both need reliable starts."
+          }
+        ]
+      }
+    },
+    {
+      "time": "2h ago",
+      "tag": "reply",
+      "body": "<b>Priya Anand</b>, Social Worker at <b>Laguna Honda</b> — asked about overnight rates and minimum hours.",
+      "thread": {
+        "subject": "Russian and Tagalog caregivers in SF",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Priya Anand <panand@lagunahonda.org>",
+            "role": "out",
+            "date": "May 7, 9:32 AM",
+            "body": "Hi Priya,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency in SF since 2001. Caregivers in patients' homes for personal care, companion, fall-risk help, and overnights.\n\nWhat's worth knowing about us if you're at Laguna Honda: we have caregivers fluent in Russian, Tagalog, and Spanish, plus English, and we keep weekend and overnight coverage staffed. When a patient's heading home and the language match or the odd-hours coverage is what's hard, that's specifically where we tend to be useful — and we'll always get back to you the same morning, yes or no.\n\nHappy to send a one-pager whenever's useful, or take a quick call so you can vet us before a discharge lands.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "Priya Anand <panand@lagunahonda.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 9, 3:18 PM",
+            "body": "Thanks Alex. Two quick questions: what's the overnight rate, and what's your minimum hours per shift? We have a Russian-speaking discharge tomorrow if you can staff it."
+          }
+        ]
+      }
+    },
+    {
+      "time": "3h ago",
+      "tag": "reply",
+      "body": "<b>Dr. Marcus Hall</b>, Geriatrician at <b>One Medical Pacific Heights</b> — asked about coverage area and weekend overnights.",
+      "thread": {
+        "subject": "Home-care agency for your referral list",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Dr. Marcus Hall <mhall@onemedical.com>",
+            "role": "out",
+            "date": "May 4, 10:11 AM",
+            "body": "Hi Dr. Hall,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency in SF since 2001. Caregivers in older patients' homes for personal care, companion, fall-risk support, and overnights. Not nursing.\n\nI know geriatricians often keep a short list of agencies they refer families to when a patient needs help at home. If you'd consider us for yours, I'd appreciate it. We answer the phone, give straight answers, and only say yes when we can actually staff a case.\n\nHappy to send a one-pager whenever it'd be helpful.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "Dr. Marcus Hall <mhall@onemedical.com>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 9, 2:42 PM",
+            "body": "Hi Alex — got it, thanks for reaching out. Two quick questions before I add anyone to my list: do you cover Pacific Heights / Presidio Heights, and how does weekend overnight coverage usually work for new clients?"
+          }
+        ]
+      }
+    },
+    {
+      "time": "5h ago",
+      "tag": "reply",
+      "body": "<b>Linda Okafor</b>, Director at <b>Rhoda Goldman Plaza</b> — \"not a fit right now, check back in Q3.\"",
+      "thread": {
+        "subject": "Home-care backup when IL isn't enough",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Linda Okafor <lokafor@rgplaza.org>",
+            "role": "out",
+            "date": "May 6, 11:03 AM",
+            "body": "Hi Linda,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency in SF since 2001. Private-duty: companion, personal care, overnights, fall-risk support.\n\nWhen an IL resident at Rhoda Goldman starts to need more help, the family is usually scrambling. The agencies that earn a spot in that moment are the ones who pick up the phone, give a clear yes or no, and have a caregiver started within a day. That's what we work to do.\n\nHappy to be on your shortlist of outside agencies whenever you'd consider it. I can send a one-pager any time.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "Linda Okafor <lokafor@rgplaza.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 9, 12:51 PM",
+            "body": "Hi Alex — appreciate the note. Not a fit right now; we have a preferred list locked in through Q2. Check back in Q3 and I'll take a real look."
+          }
+        ]
+      }
+    },
+    {
+      "time": "Yesterday",
+      "tag": "meet",
+      "body": "<b>James Whitcombe</b>, Admissions at <b>Sequoias SF</b> — 30-min call confirmed Mon 10:00 AM.",
+      "thread": {
+        "subject": "Private-duty for residents who need more",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "James Whitcombe <jwhitcombe@sequoiasf.org>",
+            "role": "out",
+            "date": "May 5, 9:00 AM",
+            "body": "Hi James,\n\nI'm Alex Girsh — I run Family Care SF, a family-owned home-care agency in SF since 2001. Private-duty for residents who need more support than IL covers: companion, personal care, overnights, fall-risk help.\n\nWhen a Sequoias resident starts to slip, the family is usually asking your team for vendor names and they want someone responsive — clear yes/no, caregiver started within a day. That's what we work to do, and it's why I'd appreciate being on your shortlist before that conversation comes up.\n\nHappy to send a one-pager or do 15 minutes by phone, whichever's easier to vet us with.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "James Whitcombe <jwhitcombe@sequoiasf.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 7, 4:18 PM",
+            "body": "Hi Alex — yes, worth a quick chat. Mon 10 AM PT works for me. 30 minutes. I'll send a Zoom link."
+          },
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "James Whitcombe <jwhitcombe@sequoiasf.org>",
+            "role": "out",
+            "date": "May 8, 8:45 AM",
+            "body": "Confirmed — Mon May 12, 10:00 AM.\n\nAlex"
+          }
+        ]
+      }
+    },
+    {
+      "time": "Yesterday",
+      "tag": "sent",
+      "body": "Outreach batch sent — 14 contacts across hospitals, attorneys, and senior living.",
+      "thread": null
+    },
+    {
+      "time": "Mon",
+      "tag": "warm",
+      "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation.",
+      "thread": {
+        "subject": "Backup home-care staffing for care plans",
+        "messages": [
+          {
+            "from": "Alex Girsh <care@familycaresf.com>",
+            "to": "Rachel Brodsky <rbrodsky@ioaging.org>",
+            "role": "out",
+            "date": "May 1, 9:22 AM",
+            "body": "Hi Rachel,\n\nI'm Alex Girsh, Family Care SF. Family-owned home-care agency in SF since 2001 — caregivers in homes for personal care, companion, overnights.\n\nFor care managers, what tends to matter most is staffing reliability and communication discipline: caregivers who show up consistently, leave clean shift notes, and someone who calls you before a problem becomes a problem. That's most of what we work on, and it's where I'd want to earn the chance to be on your list when one of your plans needs backup staffing.\n\nHappy to send a one-pager whenever's useful.\n\nAlex\n(415) 225-4948"
+          },
+          {
+            "from": "Rachel Brodsky <rbrodsky@ioaging.org>",
+            "to": "Alex Girsh <care@familycaresf.com>",
+            "role": "in",
+            "date": "May 4, 1:36 PM",
+            "body": "Alex — open to a partnership conversation. We have plans that drift because the staffing partner isn't responsive. If you're consistent on communication and weekend coverage, we should talk."
+          }
+        ]
+      }
+    }
+  ],
+  "lastWeek": {
+    "weekStart": "May 2",
+    "weekEnd": "May 8",
+    "totals": { "contacted": 92, "replied": 7, "warm": 4, "meetings": 2 },
+    "highlights": [
+      { "tag": "meet", "body": "<b>Karen Chen</b>, Discharge Planner at <b>UCSF Mission Bay</b> — booked intro for Thu 2:30 PM." },
+      { "tag": "meet", "body": "<b>James Whitcombe</b>, Admissions at <b>Sequoias SF</b> — 30-min call confirmed Mon 10:00 AM." },
+      { "tag": "warm", "body": "<b>David Reyes</b>, Elder Law at <b>Reyes &amp; Goldman</b> — \"send me your intake packet, I have two clients this week.\"" },
+      { "tag": "warm", "body": "<b>Rachel Brodsky</b>, Care Manager at <b>Institute on Aging</b> — open to a partnership conversation." },
+      { "tag": "reply", "body": "<b>Priya Anand</b>, Social Worker at <b>Laguna Honda</b> — asked about overnight rates and minimum hours." },
+      { "tag": "reply", "body": "<b>Dr. Marcus Hall</b>, Geriatrician at <b>One Medical Pacific Heights</b> — asked about coverage area and weekend overnights." }
+    ],
+    "recommendation": "Pacing well against the 90-day target (500–700 contacts, 10–20 warm conversations). Priority this week: get back to David and Rachel — same-week follow-ups convert ~2× better than waiting."
+  },
+  "weekly": [
+    { "wk": "W1", "sent": 0,  "replied": 0 },
+    { "wk": "W2", "sent": 0,  "replied": 0 },
+    { "wk": "W3", "sent": 0,  "replied": 0 },
+    { "wk": "W4", "sent": 0,  "replied": 0 },
+    { "wk": "W5", "sent": 0,  "replied": 0 },
+    { "wk": "W6", "sent": 0,  "replied": 0 },
+    { "wk": "W7", "sent": 30, "replied": 1 },
+    { "wk": "W8", "sent": 78, "replied": 4 },
+    { "wk": "W9", "sent": 92, "replied": 7 }
+  ]
+}
